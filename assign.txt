@@ -1,0 +1,55 @@
+Problem 1a.
+
+I found the range of the data files using datasetInspector.vt
+Range for columbia_river_002.vtk is 0.0-36.3922
+Range for columbia_river_001.vtk is 0.0-53.79
+
+I have rendered 3 iso values for both data files.
+For t=1 the iso values used are 0.5, 20 and 40.
+For t=2 the iso values used are 0.2, 10 and 30.
+
+Changing the iso values shows us that, water at the mid level is more saline than the water at the surface and at the bottom.
+
+One problem I found in the display of multiple iso values is that, some iso values are covered the other, so the inside ones are not visible to the viewer. Actually I saved the camera, so that the sky blue colored iso surface was visible to the viewer. We could solve this by giving opacity to the surfaces. But there are artifacts in the display. I have set the opacity and set the pipeline in Node: Problem 1a(Opacity)
+
+PS: Please keep 2 spreadsheets open for this.
+
+Problem 1b.
+
+Using the parameter exploration we can generate an animation that can be used to view the salinity level in the water. This is a very useful and intuitive method of visualization as we see how the depth of water affects the salinity.
+For generating the animation do the following.
+-Close all spreadsheets.
+-Change the contour filter values as follows.
+vtkContourFilter(1)::setValue
+Integer : 0 to 10 (you can make a larger range)
+Float : 0.1 to 53 (the whole data set basically)
+
+vtkContourFilter(2)::setValue
+Integer : 0 to 10
+Float : 0.1 to 36
+
+After setting the parameters, execute the pipeline. After execution just click on play button. You will see the creation of different iso surface giving us a visual of how exactly does the salinity change.
+
+Problem 1c.
+
+I have created pair of visualization that illustrates the changes from initial conditions(from time-step 0 to time-step 2). I have coupled them into a single visualization by creating glyphs for vector data and coloring the glyphs for the scalar data. For scientists, glyphs and streamline for vector data and varied HSV values for scalar data will give good understanding of the visualization. I could have also created 3d surface based on the scalar data with translucent colors, so that the scalar values were more apparent. But right now i have set the opacity to 0. You can change the opacity value of the datasetmapper to see the difference.
+
+Problem 2a.
+
+I have generated 4 visualizations using sampling values 0.1, 2.0, 10.0 and 20.0. These are volume renderings of the MRI dataset using the raycasting technique. I have varied the sampling parameter to illustrate the effects of nyquist frequency. We can see that first two rendering have samples just enough to render the data, i.e. its above nyquist frequency. But the last two renderings have samples that does not produce complete reconstruction of the data, hence they are below nyquist frequency.
+
+Problem 2b.
+
+I have generated 4 visualizations using sampling values 0.1, 2.0, 10.0 and 20.0. These are volume renderings of the MRI dataset using the texture-based approach. I have varied the sampling parameter to illustrate the effects of nyquist frequency. We can see that first two rendering have samples just enough to render the data, i.e. its above nyquist frequency. But the last two renderings have samples that does not produce complete reconstruction of the data, hence they are below nyquist frequency.
+
+Problem 2c.
+
+Here I have generated 4 visualizations with iso values 3000, 6000, 12000 and 24000. The problem with iso surfaces is that we cant figure out what surface represents what from the actual data, i.e. whether the surface represents skin/skull etc...
+
+Problem 2e.
+
+I have combined the volume rendering of mri.vtk and white_matter.vtk in a single rendering. Use clip plane for clipping the mri data and to display the white matter. Bring up the clipping plane by pressing "i".
+
+Problem 3a 
+
+I have formed the contour spectra of both the datasets. These spectras are useful as they show us the iso values where there is maximum surface and volume exists.

@@ -1,0 +1,84 @@
+problem 1a
+
+I have visualized Vector field (ChalVec1.vtk) in this visualization. And also I have visualized its magnitude as isosurfaces.
+
+The range of this scalar field is 0.01 - 3.2134. I have visualized the iso surfaces with 50% opacity for the visibility of all the surfaces. The iso values visualized are 0.01, 0.2, 0.3, 0.5,0.8, 0.9, 1.5, 2.5 and 3.5
+
+The streamlines display the path of the vector field and the glyphs (drawn as cone) show us the direction of the vector.
+
+problem 1b
+
+I have visualized Vector field (ChalVec1.vtk) in this visualization. And also I have visualized its divergence as isosurfaces.
+
+The range of this scalar field is -0.5 to +9.46. I have visualized the iso surfaces with 50% opacity for the visibility of all the surfaces. The iso values visualized are -0.5, -0.4, -0.1, 0.0, 0.1, 0.2 and 0.5. Although I have added other iso values in my contourfilter, they have not been visualized, as most visible iso surfaces were within the -0.4 to +0.3.
+
+I have visualized the vector field along with the divergence to show what exactly divergence show of the vector field. Divergence of a three dimensional vector field is the extent to which the vector field flow behaves like a source or a sink at a givenpoint. As you can see from the visualization that there is a point on the left that acts as a source.
+
+I have visualized only divergence as problem 1c just to show you that this gives more information than visualizing only divergence.
+
+Problem 1b(divergence only)
+
+I have visualized its divergence as isosurfaces.
+
+The range of this scalar field is -0.5 to +9.46. I have visualized the iso surfaces with 50% opacity for the visibility of all the surfaces. The iso values visualized are -0.5, -0.4, -0.1, 0.0, 0.1, 0.2 and 0.5. Although I have added other iso values in my contourfilter, they have not been visualized, as most visible iso surfaces were within the -0.4 to +0.3.
+
+This is only visualized as to compare with the visualization in problem 1b.
+
+Problem 1c
+
+Here, I have visualized the vector fields curl and its magnitude.
+
+The curl magnitude ranges from 0 - 1.64. The iso values visualized are 0.01, 0.2, 0.3, 0.5, 0.9, 1.0, 1.2, 1.4 and 1.64.
+
+Curl is the rate of rotation of the vector field. We can see that the direction of the curl straightens where the magnitude of curl is high. This is because the rate of rotation of the vector field is high at this point and the curl direction is perpendicular to the vectors rotation axis.
+
+I have also visualized vector field with the curl magnitude to show how the rotation of the vector field relates to curl.
+
+Problem 1d
+
+I have visualized Vector field (ChalVec1.vtk) in this visualization along with the magnitude of its curl.
+
+The curl magnitude ranges from 0 - 1.64. The iso values visualized are 0.01, 0.2, 0.3, 0.5, 0.9, 1.0, 1.2, 1.4 and 1.64.
+
+Curl is the rate of rotation. Visualizing vector field with the curl magnitude shows how the curl relates to the vector field.
+
+You can see that the 4 funnels you see are the points where the vector rotates most.
+
+Problem 2a
+
+This visualization displays the density of the particle field along with its direction.
+
+ The density ranges from 0 to 38282. As particle density within the range 0 - 600 have larger iso surface, I have only plotted them in the visualization. The iso values visualized are 0, 10, 50, 100, 200, and 400.
+
+The glyphs depict the direction of the particle.
+
+I have also visualized only the density as the glyphs seem to obscure the iso surfaces created.
+
+Problem 2b
+
+This visualization displays the density of the particle field only. This is done as the glyphs obscure the iso surfaces visualized.
+
+ The density ranges from 0 to 38282. As particle density within the range 0 - 600 have larger iso surface, I have only plotted them in the visualization. The iso values visualized are 0, 10, 50, 100, 200, and 400.
+
+Problem 2c
+
+
+ The density ranges from 0 to 36795. As particle density within the range 0 - 600 have larger iso surface, I have only plotted them in the visualization. The iso values visualized are 0, 10, 50, 100, 200, and 400.
+
+The glyphs depict the direction of the particle.
+
+I have also visualized only the density as the glyphs seem to obscure the iso surfaces created.
+
+Problem 2d
+
+This visualization displays the density of the particle field only. This is done as the glyphs obscure the iso surfaces visualized.
+
+ The density ranges from 0 to 36795. As particle density within the range 0 - 600 have larger iso surface, I have only plotted them in the visualization. The iso values visualized are 0, 10, 50, 100, 200, and 400.
+
+Problem 2e
+
+This visualization displays juxtaposed data, both halo (density and direction) and also of all the particles (both density and direction). This can be used to just compare the iso surfaces to analyze data visually.
+
+Problem 2f
+
+This is a plot of the enclosed volume and the shape index. As mentioned in the problem, scientists are looking for properties that they can use to compare shape of the fields and the difference between the volume enclosed by each field. I have plotted 2 graphs that show enclosed volume and the shape index of the particle density.
